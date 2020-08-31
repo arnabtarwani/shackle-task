@@ -1,0 +1,32 @@
+{
+  "name": "explore-shackle",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "server": "cross-env NODE_ENV=development nodemon -L server/server.js",
+    "start": "npm run server",
+    "client": "npm run serve --prefix client",
+    "dev": "concurrently \"npm run start\" \"npm run client\""
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "helmet": "^4.1.0",
+    "mongoose": "^5.10.1",
+    "node-fetch": "^2.6.0",
+    "vue-router": "^3.4.3",
+    "vue-toasted": "^1.1.28"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4"
+  }
+}
